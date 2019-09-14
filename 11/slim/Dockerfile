@@ -6,4 +6,6 @@ ENV REFRESHED_AT $REFRESHED_AT
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN apt-get update -qq && apt-get install -qq --no-install-recommends git
+RUN apt-get update -qq && apt-get install -qq --no-install-recommends git=2.23.0 \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
