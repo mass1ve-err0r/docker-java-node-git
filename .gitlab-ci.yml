@@ -1,4 +1,4 @@
-image: hadolint/hadolint
+image: hadolint/hadolint:latest-debian
 
 stages:
   - lint
