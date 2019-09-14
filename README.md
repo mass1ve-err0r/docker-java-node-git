@@ -1,7 +1,5 @@
 # java-node-git-docker-image
 
-A minimal Dockerfile based on [timbru31/java-node](https://www.github.com/timbru31/docker-java-node) with git installed.
-
 [![Docker Automated build](https://img.shields.io/docker/automated/nathanfriend/java-node-git.svg)](https://hub.docker.com/r/nathanfriend/java-node-git/)
 [![Docker Build Status](https://img.shields.io/docker/build/nathanfriend/java-node-git.svg)](https://hub.docker.com/r/nathanfriend/java-node-git/)
 [![Build Status](https://gitlab.com/nfriend/lab-assistant/badges/master/pipeline.svg)](https://gitlab.com/nfriend/docker-java-node-git/pipelines/latest)
