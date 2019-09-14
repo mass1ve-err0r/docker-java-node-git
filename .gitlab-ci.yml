@@ -1,5 +1,8 @@
 image: hadolint/hadolint:latest-debian
 
+services:
+  - docker
+
 stages:
   - lint
 
