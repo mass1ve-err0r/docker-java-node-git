@@ -15,4 +15,4 @@ A minimal Dockerfile based on [timbru31/java-node](https://www.github.com/timbru
   - yarn
   - curl
 - From this Dockerfile
-  - git
+  - git 2.23.0
