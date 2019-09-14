@@ -1,37 +1,34 @@
 image: hadolint/hadolint:latest-debian
 
-services:
-  - docker
-
 stages:
   - lint
 
 lint 8:
   stage: lint
   script:
-    - docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 - < 8/Dockerfile
+    - hadolint 8/Dockerfile
 
 lint 11:
   stage: lint
   script:
-    - docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 - < 11/Dockerfile
+    - hadolint 11/Dockerfile
 
 lint 8 slim:
   stage: lint
   script:
-    - docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 - < 8/slim/Dockerfile
+    - hadolint 8/slim/Dockerfile
 
 lint 11 slim:
   stage: lint
   script:
-    - docker run --rm -i hadolint/hadolint hadolint --ignore DL3008 - < 11/slim/Dockerfile
+    - hadolint 11/slim/Dockerfile
 
 lint 8 alpine:
   stage: lint
   script:
-    - docker run --rm -i hadolint/hadolint hadolint --ignore DL3018 - < 8/alpine/Dockerfile
+    - hadolint 8/alpine/Dockerfile
 
 lint 11 alpine:
   stage: lint
   script:
-    - docker run --rm -i hadolint/hadolint hadolint --ignore DL3018 - < 11/alpine/Dockerfile
+    - hadolint 11/alpine/Dockerfile
