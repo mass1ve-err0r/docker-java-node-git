@@ -14,5 +14,5 @@ A minimal Dockerfile based on [timbru31/java-node](https://www.github.com/timbru
   - npm 6
   - yarn
   - curl
-- From this Dockerfile
+- From this Dockerfile:
   - git
