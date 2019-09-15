@@ -16,3 +16,7 @@ A minimal Dockerfile based on [timbru31/java-node](https://www.github.com/timbru
   - curl
 - From this Dockerfile:
   - git
+
+## Source
+
+View the source on [GitLab](https://github.com/nfriend/docker-java-node-git) or its mirror on [GitHub](https://github.com/nfriend/docker-java-node-git). Please open issues and merge requests against the GitLab repository.
