@@ -6,6 +6,10 @@ ENV REFRESHED_AT $REFRESHED_AT
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN apt-get update -qq && apt-get install -qq --no-install-recommends git=2.23.0 \
+RUN apt-get update -qq \
+ && apt-get install -qq software-properties-common \
+ && add-apt-repository ppa:git-core/ppa \
+ && apt-get update -qq \
+ && apt-get install -qq --no-install-recommends git=1:2.23.0-0ppa1~ubuntu19.10.1 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
