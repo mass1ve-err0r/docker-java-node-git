@@ -1,4 +1,9 @@
 {
-  "extends": ["config:base", ":automergeMinor"],
+  "extends": [
+    "config:base",
+    ":automergeDigest",
+    ":automergeMinor",
+    ":docker"
+  ],
   "labels": ["renovate", "dependencies"]
 }
