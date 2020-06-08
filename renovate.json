@@ -5,6 +5,5 @@
     ":automergeMinor",
     ":docker"
   ],
-  "labels": ["renovate", "dependencies"],
-  "assignees": ["nfriend"]
+  "labels": ["renovate", "dependencies"]
 }
