@@ -1,4 +1,4 @@
-FROM timbru31/java-node:8-alpine@sha256:315922b86a72b6d5d6c39787b04192e8a34bcccb3e59d142c9a8f2fd501d302a
+FROM timbru31/java-node:8-alpine@sha256:05be0ca0149c760cb1f587cc9a96c7f5942a891b0e3bc67338180a7f7759df15
 LABEL maintainer "Nathan Friend <hello@nathanfriend.io>"
 
 ARG REFRESHED_AT
